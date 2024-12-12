@@ -9,7 +9,7 @@ spec:
     namespace: argocd
   project: default
   source:
-    repoURL: git@github.com:mustafadincerr/app-of-apps.git
+    repoURL: https://github.com/mustafadincerr/app-of-apps.git
     targetRevision: HEAD
     path: app-of-apps-chart
   syncPolicy:
