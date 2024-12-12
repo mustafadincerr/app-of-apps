@@ -1,0 +1,4 @@
+apps:
+  - name: double-app
+    chart: ./double-app # my-app chart'ına referans
+    namespace: default
