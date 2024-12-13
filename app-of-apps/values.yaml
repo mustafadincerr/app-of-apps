@@ -1,4 +1,9 @@
-apps:
+applications:
   - name: double-app
-    chart: ./double-app # my-app chart'ına referans
-    namespace: default
+    namespace: argocd
+    repoURL: https://github.com/mustafadincerr/app-of-apps.git
+    targetRevision: HEAD
+    path: double-app
+    destinationNamespace: argocd 
+    destinationServer: https://kubernetes.default.svc
+
